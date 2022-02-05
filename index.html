@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>State of JavaScript survey</h1>
+
+    <div>
+       <button id="change-theme-btn">Change Background Color</button>
+    </div>
+
+    <form action="">
+
+        <fieldset name="name-age">
+            <label>First Name: <input type="text" required name="fname" /></label>
+            <label>Last Name: <input type="text" required name="lname" /></label>
+            <label>Email: <input type="text" required name="fname" /></label>
+            <label>Age: <input type="text" required name="fname" /></label>
+        </fieldset>
+
+        <fieldset name="role">
+            <label>Describe your role: 
+                <select name="role" id="role">
+                    <option value="">Choose your destiny</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Fullstack">Fullstack</option>
+                    <option value="Tester">Tester</option>
+                    <option value="Student">Student</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset name="would-recommend">
+            <label>Would you recommend javascript to a friend?   </label>
+            <label for=""><input type="radio" name="recommend" class="inline">Definetly</label>
+            <label for=""><input type="radio" name="recommend" class="inline">Never</label>
+            <label for=""><input type="radio" name="recommend" class="inline">Not Sure</label>
+            <label for=""><input type="radio" name="recommend" class="inline">I have no friends</label>
+        </fieldset>
+
+        <fieldset name="favourite-features">
+            <label>Favorite JavaScript feature?
+                <select name="favourite-features" id="favourite-features">
+                <option value="">Select an option</option>
+                <option value="Functions">Functions</option>
+                <option value="Classes">Classes</option>
+                <option value="Speed">Speed</option>
+                <option value="Ubiquity">Ubiquity</option>
+                </select>    
+            </label>
+        </fieldset>
+
+        <fieldset name="improvements">
+            <label class="improvements">What would you like to see improoved? (check multiple)  </label>
+             <label> <input type="checkbox" class="improvements">Static typing</label>
+             <label> <input type="checkbox" class="improvements">Speed</label>
+             <label> <input type="checkbox" class="improvements">Ease of use</label>
+        </fieldset>
+
+        <fieldset name="comments">
+            <label for="">Any suggestions about the future of JavaScript?
+            <textarea name="comments" cols="30" rows="10" class="comments-textarea"></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Submit" name="submit"/>
+    </form>
+    
+    <script src="app.js"></script>
+</body>
+</html>
